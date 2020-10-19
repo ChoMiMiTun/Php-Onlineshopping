@@ -17,6 +17,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 $iid = $row['id'];
 $iname = $row['name'];
 $iprice = $row['price'];
+$idescription = $row['description'];
 $ibrand_id = $row['brand_id'];
 $iscategory_id = $row['subcategory_id'];
 
@@ -99,7 +100,7 @@ $iscategory_id = $row['subcategory_id'];
                                 </div>
                             
                                 <div class="tab-pane fade" id="discount" role="tabpanel">
-                                    <input type="text"  id="discount" name="discount" class="form-control my-4" value="<?php echo $row['discount'] ?>">>
+                                    <input type="text"  id="discount" name="discount" class="form-control my-4" value="<?php echo $row['discount'] ?>">
                                 </div>
                             </div>  
                             

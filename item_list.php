@@ -38,7 +38,8 @@ require('db_connect.php');
                                             $sql = "SELECT brand.name AS bname,
                                                      items.name AS iname,
                                                      items.price AS iprice,
-                                                     items.id AS iid
+                                                     items.id AS iid,
+                                                     items.description AS idescription
                                                      FROM brand 
                                                      JOIN items 
                                                      ON brand.id = items.brand_id";
@@ -57,14 +58,6 @@ require('db_connect.php');
                                             $stmt->execute();
 
                                             $items = $stmt->fetchAll();
-
-                                            // foreach ($items as $item) {
-                                                
-                                            //     $itemprice = $item['price'];
-                                                
-                                            // }
-
-                                        //End Fetch item table
 
                                             $i = 1;
                                             foreach ($brand as $b) {
