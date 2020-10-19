@@ -16,6 +16,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $iid = $row['id'];
 $iname = $row['name'];
+$iprice = $row['price'];
 $ibrand_id = $row['brand_id'];
 $iscategory_id = $row['subcategory_id'];
 
